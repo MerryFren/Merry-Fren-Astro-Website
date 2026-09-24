@@ -1,7 +1,7 @@
 ---
-title: 'First post'
-description: 'Lorem ipsum dolor sit amet'
-pubDate: 'Jul 08 2022'
+title: 'Merry Fren on Robinhood Chain'
+description: 'Everything you need to know'
+pubDate: 'Sep 24 2026'
 heroImage: '../../assets/blog-placeholder-3.jpg'
 ---
 
