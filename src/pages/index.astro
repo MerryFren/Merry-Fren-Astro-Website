@@ -3,47 +3,337 @@ import BaseHead from '../components/BaseHead.astro';
 import Footer from '../components/Footer.astro';
 import Header from '../components/Header.astro';
 import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
+
+const ponsUrl =
+  'https://www.ponsfamily.com/launchpad/0xfb7718C78C6B94Ed82f2B568dF2F79383f873DBa';
+const xUrl = 'https://x.com/MerryFren';
 ---
 
 <!doctype html>
 <html lang="en">
-	<head>
-		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-	</head>
-	<body>
-		<Header />
-		<main>
-			<h1>🧑‍🚀 Hello, Astronaut!</h1>
-			<p>
-				Welcome to the official <a href="https://astro.build/">Astro</a> blog starter template. This template
-				serves as a lightweight, minimally-styled starting point for anyone looking to build a personal
-				website, blog, or portfolio with Astro.
-			</p>
-			<p>
-				This template comes with a few integrations already configured in your{' '}
-				<code>astro.config.mjs</code> file. You can customize your setup with{' '}
-				<a href="https://astro.build/integrations">Astro Integrations</a> to add tools like Tailwind,
-				React, or Vue to your project.
-			</p>
-			<p>Here are a few ideas on how to get started with the template:</p>
-			<ul>
-				<li>Edit this page in <code>src/pages/index.astro</code></li>
-				<li>Edit the site header items in <code>src/components/Header.astro</code></li>
-				<li>Add your name to the footer in <code>src/components/Footer.astro</code></li>
-				<li>Check out the included blog posts in <code>src/content/blog/</code></li>
-				<li>Customize the blog post page layout in <code>src/layouts/BlogPost.astro</code></li>
-			</ul>
-			<p>
-				Have fun! If you get stuck, remember to{' '}
-				<a href="https://docs.astro.build/">read the docs</a>{' '}
-				or <a href="https://astro.build/chat">join us on Discord</a> to ask questions.
-			</p>
-			<p>
-				Looking for a blog template with a bit more personality? Check out{' '}
-				<a href="https://github.com/Charca/astro-blog-template">astro-blog-template</a>{' '}
-				by <a href="https://twitter.com/Charca">Maxi Ferreira</a>.
-			</p>
-		</main>
-		<Footer />
-	</body>
+  <head>
+    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+  </head>
+
+  <body>
+    <Header />
+
+    <main class="mf-page">
+
+      <!-- HERO -->
+      <section class="mf-hero">
+        <div class="mf-container mf-container-narrow">
+
+          <p class="mf-eyebrow">Merry Fren · Robinhood Chain</p>
+
+          <h1 class="mf-hero-title">
+            Robin Hood had his Merry Men.
+            <span>Robinhood Chain has Merry Fren.</span>
+          </h1>
+
+          <p class="mf-hero-lead">
+            Robin Hood gave gold to the people.
+            <strong>Merry Fren gives Bitcoin to the people.</strong>
+          </p>
+
+          <div class="mf-actions">
+            <a
+              class="mf-button mf-button-primary"
+              href={ponsUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Buy $FREN
+            </a>
+
+            <a class="mf-button mf-button-secondary" href="#how-it-works">
+              How it works
+            </a>
+          </div>
+
+        </div>
+      </section>
+
+
+      <!-- STORY -->
+      <section class="mf-section mf-story-section">
+        <div class="mf-container">
+
+          <div class="mf-story">
+
+            <div class="mf-story-item">
+              <span class="mf-story-number">01</span>
+              <div>
+                <p class="mf-eyebrow">The legend</p>
+                <h2>Robin Hood had his Merry Men.</h2>
+                <p>
+                  A group of friends who stood together and shared what they
+                  had with the people.
+                </p>
+              </div>
+            </div>
+
+            <div class="mf-story-line"></div>
+
+            <div class="mf-story-item">
+              <span class="mf-story-number">02</span>
+              <div>
+                <p class="mf-eyebrow">The chain</p>
+                <h2>Robinhood Chain has Merry Fren.</h2>
+                <p>
+                  A community of frens building around Robinhood Chain,
+                  Bitcoin and the culture growing onchain.
+                </p>
+              </div>
+            </div>
+
+            <div class="mf-story-line"></div>
+
+            <div class="mf-story-item">
+              <span class="mf-story-number">03</span>
+              <div>
+                <p class="mf-eyebrow">The idea</p>
+                <h2>Gold became Bitcoin.</h2>
+                <p>
+                  Robin Hood gave gold to the people.
+               <br>
+                  Merry Fren gives Bitcoin to the people.
+                </p>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+
+      <!-- HOW IT WORKS -->
+      <section class="mf-section" id="how-it-works">
+        <div class="mf-container">
+
+          <div class="mf-section-heading">
+            <p class="mf-eyebrow">How it works</p>
+            <h2>Simple by design.</h2>
+            <p>
+              $FREN connects trading activity with Bitcoin distributions
+              for eligible holders.
+            </p>
+          </div>
+
+          <div class="mf-steps">
+
+            <article class="mf-step">
+              <span class="mf-step-number">01</span>
+              <h3>Trade $FREN</h3>
+              <p>
+                People buy and sell Fren Token on Robinhood Chain.
+              </p>
+            </article>
+
+            <article class="mf-step">
+              <span class="mf-step-number">02</span>
+              <h3>Fees are generated</h3>
+              <p>
+                Trading activity creates fees.
+              </p>
+            </article>
+
+            <article class="mf-step">
+              <span class="mf-step-number">03</span>
+              <h3>Bitcoin is bought</h3>
+              <p>
+                Those fees are used to buy Bitcoin.
+              </p>
+            </article>
+
+            <article class="mf-step">
+              <span class="mf-step-number">04</span>
+              <h3>Holders receive Bitcoin</h3>
+              <p>
+                Bitcoin is distributed to eligible $FREN holders.
+              </p>
+            </article>
+
+          </div>
+
+          <p class="mf-note">
+            No staking. No signup. Just hold $FREN.
+          </p>
+
+        </div>
+      </section>
+
+
+      <!-- ABOUT -->
+      <section class="mf-section mf-section-muted" id="about">
+        <div class="mf-container mf-container-narrow">
+
+          <p class="mf-eyebrow">The token</p>
+
+          <h2>
+            What is <span class="mf-green">$FREN</span>?
+          </h2>
+
+          <div class="mf-text">
+            <p class="mf-large">
+              $FREN is a memecoin on Robinhood Chain.
+            </p>
+
+            <p>
+              Robinhood is one of the world's largest brokers and launched
+              Robinhood Chain as an onchain network for tokenized assets.
+            </p>
+
+            <p>
+              Memecoins live on the chain too. Merry Fren is built around
+              the culture, community and possibilities emerging there.
+            </p>
+
+            <p>
+              The idea is simple:
+              <strong> Robin Hood gave gold. We give Bitcoin.</strong>
+            </p>
+          </div>
+
+        </div>
+      </section>
+
+
+      <!-- TOKEN -->
+      <section class="mf-section" id="token">
+        <div class="mf-container">
+
+          <div class="mf-section-heading">
+            <p class="mf-eyebrow">Token</p>
+            <h2>Fren Token</h2>
+          </div>
+
+          <div class="mf-token-grid">
+
+            <div class="mf-stat">
+              <span>Ticker</span>
+              <strong>$FREN</strong>
+            </div>
+
+            <div class="mf-stat">
+              <span>Supply</span>
+              <strong>1,000,000,000</strong>
+            </div>
+
+            <div class="mf-stat">
+              <span>Chain</span>
+              <strong>Robinhood Chain</strong>
+            </div>
+
+            <div class="mf-stat">
+              <span>Launchpad</span>
+              <strong>Pons</strong>
+            </div>
+
+          </div>
+
+          <div class="mf-feature-grid">
+
+            <article class="mf-feature">
+              <p class="mf-eyebrow">01</p>
+              <h3>Fixed supply</h3>
+              <p>
+                The total supply is fixed at 1,000,000,000 tokens.
+                No more tokens can be issued.
+              </p>
+            </article>
+
+            <article class="mf-feature">
+              <p class="mf-eyebrow">02</p>
+              <h3>Buy &amp; burn</h3>
+              <p>
+                A deflationary buy-and-burn mechanism is coming.
+              </p>
+            </article>
+
+            <article class="mf-feature">
+              <p class="mf-eyebrow">03</p>
+              <h3>More utility</h3>
+              <p>
+                More utility for $FREN is coming.
+              </p>
+            </article>
+
+          </div>
+
+          <p class="mf-disclaimer">
+            Always verify the official token address before trading.
+          </p>
+
+        </div>
+      </section>
+
+
+      <!-- PONS -->
+      <section class="mf-section mf-section-muted" id="launch">
+        <div class="mf-container mf-container-narrow">
+
+          <p class="mf-eyebrow">Where it started</p>
+
+          <h2>Launched on Pons.</h2>
+
+          <div class="mf-text">
+            <p class="mf-large">
+              $FREN launched on Pons, a launchpad on Robinhood Chain.
+            </p>
+
+            <p>
+              The original home of Fren Token and the beginning of the
+              Merry Fren journey onchain.
+            </p>
+          </div>
+
+          <a
+            class="mf-text-link"
+            href={ponsUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Visit Pons →
+          </a>
+
+        </div>
+      </section>
+
+
+      <!-- NFT -->
+      <section class="mf-section" id="nft">
+        <div class="mf-container mf-container-narrow">
+
+          <p class="mf-eyebrow">For the early frens</p>
+
+          <h2>Merry Fren NFTs</h2>
+
+          <div class="mf-nft-box">
+
+            <div>
+              <p class="mf-large">
+                A small collection is coming.
+              </p>
+
+              <p>
+                The Merry Fren NFT collection is being built for the
+                early frens of the community.
+              </p>
+            </div>
+
+            <span class="mf-badge">Coming soon</span>
+
+          </div>
+
+        </div>
+      </section>
+
+
+
+    </main>
+
+    <Footer />
+  </body>
 </html>
